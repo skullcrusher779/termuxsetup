@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~/
+clear
 echo "This Script was made by skullcrusher779." 
 echo "Instagram: @snjm.exe"
 echo "Please Make Sure you have at least 1 GB space in your device."
