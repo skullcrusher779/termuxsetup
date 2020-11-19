@@ -6,17 +6,9 @@ echo Please Make Sure you have at least 1 GB space in your device.
 echo Press Ctrl+C for aborting the install in the next 7 seconds.
 sleep 7s
 echo Preparing The Install
-echo <==......> 25% Done..
+echo  
+echo Installing Tools and Packages Now ! # Final Announcement that the tools are about to be unleashed
 sleep 1s
-echo <====....> 50% Done..
-sleep 1s
-echo <======..> 75% Done..
-sleep 1s
-echo <========> 100% Done ! !
-echo "$(tput bel)"
-echo Installing Tools and Packages Now !
-sleep 1s
-echo "$(tput bel)"
 apt-get update --fix-missing # This fixes the problems that occur when installing tor
 clear
 apt install tor -y # This installs the tor service
@@ -48,8 +40,8 @@ clear
 pkg install cowsay # Installs cowsay, just for fun ! >> Syntax is >> cowsay text
 cd
 clear
-figlet Installing Tools...
-echo "$(tput bel)"
+figlet Tool Install
+cd Initiating Tool Install ...
 echo List of Tools To Install > PhoneInfoGA, Osi.Ig, InfoSploit, Zphisher, SayCheese.
 echo  
 echo  
@@ -63,7 +55,6 @@ cd
 echo  
 echo  
 echo Syntax for PhoneInfoga.py >> python3 phoneinfoga.py -n +91xxxxxxxxxx {Any country code can be used}
-echo "$(tput bel)"
 sleep 3s
 clear
 echo PhoneInfoGA Install Is Complete ! :)
@@ -97,7 +88,6 @@ echo InfoSploit has been installed ! Syntax >> python2 infosploit.py
 sleep 3s
 clear
 cd
-echo "$(tput bel)"
 echo The next tool is: Zphisher ! The best phishing tool for termux
 cd
 sleep 2s
@@ -107,7 +97,6 @@ chmod +x *
 cd
 echo  
 echo  
-echo "$(tput bel)"
 echo Zphisher has been installed ! Syntax >> bash zphisher.sh
 sleep 3s
 clear
@@ -123,21 +112,7 @@ echo
 echo SayCheese has been installed ! Syntax >> bash saycheese.sh
 echo  
 echo  
-echo "$(tput bel)"
-echo "$(tput bel)"
-echo "$(tput bel)"
-echo "$(tput bel)"
-echo "$(tput bel)"
-echo "$(tput bel)"
 figlet DONE.
 echo  
 echo The install is complete ! Start Hacking ! Follow @snjm.exe on Instagram for more !
-echo Good-Bye !
-
-
-
-
-
-
-
-
+cowsay Good-Bye !
