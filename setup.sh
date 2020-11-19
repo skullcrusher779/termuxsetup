@@ -4,7 +4,7 @@ echo "This Script was made by skullcrusher779."
 echo "Instagram: @snjm.exe"
 echo "Please Make Sure you have at least 1 GB space in your device."
 echo "Press Ctrl+C for aborting the install in the next 7 seconds."
-sleep 7
+sleep 7s
 echo "Preparing The Install"
 echo " "
 echo "Installing Tools and Packages Now" # Final Announcement that the tools are about to be unleashed
