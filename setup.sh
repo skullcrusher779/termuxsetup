@@ -49,6 +49,7 @@ clear
 pkg install cowsay # Installs cowsay, just for fun ! >> Syntax is >> cowsay text
 clear
 gem install lolcat # Installs lolcat for rainbow text printing
+clear
 cd ~/
 clear
 figlet Tool Install # Installing tools
