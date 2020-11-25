@@ -1,9 +1,12 @@
 #!/bin/bash
 cd ~/
+# This script was made ONLY FOR TERMUX !! Do not run it in Kali ! It wont work because commands are different !!
+# Make sure you do not interupt it in between installing tools as it may cause problems later on !
 echo "This Script was made by skullcrusher779." 
 echo "Instagram: @snjm.exe"
 echo "Please Make Sure you have at least 1 GB space in your device."
 echo "Press Ctrl+C for aborting the install in the next 7 seconds."
+echo "Please give termux storage permission beforehand by executing termux-setup-storage before using this script. Abort Now if you have not done this !"
 sleep 7
 echo " "
 echo " "
