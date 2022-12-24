@@ -14,13 +14,12 @@ echo "Time Of Initiation"
 echo " "
 date
 echo " "
-echo "$(tput bel)" # Vibrates the device for a little heads up
 echo "Preparing The Install"
 echo " "
 echo "Installing Tools and Packages Now" # Final Announcement that the tools are about to be unleashed !
 sleep 1
-echo "$(tput bel)"
-echo "$(tput bel)"
+pkg update -y # Fixes the zsh problem later on
+clear
 apt-get update --fix-missing # This fixes the problems that occur when installing tor
 clear
 apt install tor -y # This installs the tor service
@@ -55,88 +54,5 @@ gem install lolcat # Installs lolcat for rainbow text printing
 clear
 cd ~/
 clear
-figlet Tool Install # Installing tools
-echo "Initiating Tool Install ..." 
-echo "$(tput bel)"
-echo List of Tools To Install > PhoneInfoGA, Osi.Ig, InfoSploit, Zphisher, SayCheese | lolcat # List of tools
-echo " "
-echo " "
-echo "$(tput bel)" # Warning
-cd ~/
-echo "PhoneInfoGa. A Phone Number Osint tool used to gather information on a specific phone number." # Info on tool
-sleep 3
-git clone https://github.com/la-deep-web/Phoneinfoga # Cloning..
-cd Phoneinfoga # CD to cloned
-chmod +x phoneinfoga.py # Changing permission
-cd ~/ # Home Directory
-echo " "
-echo " "
-echo "Syntax for PhoneInfoga.py >> python3 phoneinfoga.py -n +91xxxxxxxxxx {Any country code can be used}" # Syntax for tool
-sleep 3
-clear
-echo "PhoneInfoGA Install Is Complete !" # Install success prompt
-echo " "
-echo " "
-sleep 2
-clear
-cowsay Installing Osi.Ig
-echo "Now we will install Osiig. Instagram OSINT Tool." # Heads up for tool name and purpose
-git clone https://github.com/th3unkn0n/osi.ig # cloning from git
-cd osi.ig # Cd to cloned tool
-python3 -m pip install -r requirements.txt # Installing dependencies from file that comes with the tool itself
-sleep 2
-clear
-echo  "Osi.Ig has been installed successfully ! :)" # Succesful Install prompt
-echo " "
-echo  "Sytax for Osi.ig >> python3 main.py -u username" # Syntax for osi.ig
-echo " "
-sleep 2 
-clear
-echo The next tool is InfoSploit. A website, IP/Domain OSINT tool | lolcat # Rainbow text for fun... Heads up for next tool and its usage
-sleep 3
-cd ~/
-git clone https://github.com/CybernetiX-S3C/InfoSploit # Cloning from git.. will be updated in case link dies due to bans or account deletion of cybernetix
-cd InfoSploit # cd to clone
-chmod +x * # changing permissions 
-cd ~/ # cd Home
-sleep 1
-echo "$(tput bel)" # Warning
-echo " "
-echo " "
-echo "InfoSploit has been installed ! Syntax >> python2 infosploit.py" # Syntax for the the tool
-sleep 3
-clear
-cd ~/
-echo "The next tool is: Zphisher ! The best phishing tool for termux" # Zphisher install
-cd ~/
-sleep 2
-echo "$(tput bel)" # Warning
-git clone https://github.com/htr-tech/zphisher
-cd zphisher/ # cd to zphisher
-chmod +x * # Changing permissions
-cd ~/
-echo " "
-echo " "
-echo "Zphisher has been installed ! Syntax >> bash zphisher.sh" # Syntax for the tool
-echo "$(tput bel)" # Warning
-sleep 3
-clear
-echo "The Final tool SayCheese ! It is used to pwn webcams !" # Final tool info
-echo " "
-echo " "
-sleep 2
-cd ~/
-git clone https://github.com/xd20111/saycheese
-cd saycheese
-cd ~/
-echo " "
-echo "SayCheese has been installed ! Syntax >> bash saycheese.sh"
-echo " "
-echo " "
-figlet DONE | lolcat
-echo " "
-echo The install is complete ! Start Hacking ! Follow @snjm.exe on Instagram for more ! | lolcat
-echo "$(tput bel)"
-echo "$(tput bel)"
-cowsay Good-Bye !
+figlet Done !
 cd ~/
